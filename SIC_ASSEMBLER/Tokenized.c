@@ -22,7 +22,7 @@ int isCharacter(char input) {
 	if ('a' <= input && input <= 'z') return 1;
 	if ('A' <= input && input <= 'Z') return 1;
 	if ('0' <= input && input <= '9') return 1;
-	return 0;
+	return 0;	
 }
 int isSpace(char input) {
 	if (input == ' ' || input == '\t')  return 1;

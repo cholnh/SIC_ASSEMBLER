@@ -1,33 +1,57 @@
-﻿  Main.c
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(78): warning C4047: '함수': 'Node *'의 간접 참조 수준이 'Node (*)[58]'과(와) 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(78): warning C4024: 'init_OPTAB': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(79): warning C4047: '함수': 'ListHeader *'의 간접 참조 수준이 'ListHeader **'과(와) 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(79): warning C4024: 'init_SYMTAB': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(83): warning C4047: '함수': 'ListHeader *'의 간접 참조 수준이 'ListHeader **'과(와) 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(83): warning C4024: 'pass_1': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(84): warning C4047: '함수': 'ListHeader *'의 간접 참조 수준이 'ListHeader **'과(와) 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(84): warning C4024: 'printNode': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(88): warning C4047: '함수': 'ListHeader *'의 간접 참조 수준이 'ListHeader **'과(와) 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(88): warning C4024: 'pass_2': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(73): warning C4101: 'line_data' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(75): warning C4101: 'sourceFile2' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(74): warning C4101: 'sourceFile' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(101): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(106): warning C4013: 'strcpy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(113): warning C4133: '=': 'ListNode *'과(와) 'ListNode *' 사이의 형식이 호환되지 않습니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(120): warning C4013: 'strstr'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(125): warning C4133: '=': 'ListNode *'과(와) 'ListNode *' 사이의 형식이 호환되지 않습니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(135): warning C4133: '=': 'ListNode *'과(와) 'ListNode *' 사이의 형식이 호환되지 않습니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(145): warning C4133: '=': 'ListNode *'과(와) 'ListNode *' 사이의 형식이 호환되지 않습니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(163): warning C4133: '=': 'ListNode *'과(와) 'ListNode *' 사이의 형식이 호환되지 않습니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(186): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: 'fscanf' 선언을 참조하십시오.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(187): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: 'fscanf' 선언을 참조하십시오.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(176): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(178): warning C4101: 'opcode' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(179): warning C4101: 'operand' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(177): warning C4101: 'label' :참조되지 않은 지역 변수입니다.
-c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\main.c(209): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  Tokenized.c
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(78): warning C4013: 'setError'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(58): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(83): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(95): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(96): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(97): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(100): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(108): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(49): warning C4101: 'startP' :참조되지 않은 지역 변수입니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\tokenized.c(49): warning C4101: 'endP' :참조되지 않은 지역 변수입니다.
+  Pass2.c
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(41): warning C4013: 'strlen'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(45): warning C4013: 'setError'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(49): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(54): warning C4013: 'strcat'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(98): warning C4013: 'readline'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(98): warning C4047: '=': 'Data *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(99): warning C4013: 'strstr'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(102): warning C4047: '=': 'Data *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(129): warning C4013: 'getValue'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(148): warning C4013: 'searchIndex'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(148): warning C4047: '=': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(152): warning C4047: '=': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(161): warning C4013: 'searchNode'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(161): warning C4047: '=': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(164): warning C4013: '_strtoi64'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(183): warning C4013: 'strchr'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(183): warning C4047: '=': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(185): warning C4047: '=': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(187): warning C4047: '=': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(190): warning C4013: 'memcpy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(200): warning C4013: 'strcpy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(216): warning C4013: 'atoi'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(231): warning C4047: '=': 'Data *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(93): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
-  SIC_ASSEMBLER.vcxproj -> C:\Users\CNH\documents\visual studio 2015\Projects\SIC_ASSEMBLER\Debug\SIC_ASSEMBLER.exe
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(134): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(164): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(195): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+c:\users\cnh\documents\visual studio 2015\projects\sic_assembler\sic_assembler\pass2.c(81): warning C4101: 'ascii' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
+  SIC_ASSEMBLER.vcxproj -> C:\Users\CNH\Documents\Visual Studio 2015\Projects\SIC_ASSEMBLER\Debug\SIC_ASSEMBLER.exe

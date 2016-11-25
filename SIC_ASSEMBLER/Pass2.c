@@ -1,6 +1,5 @@
 #include <stdio.h>
 #define MAX_CHAR_SIZE 10
-#define INSTRUCTION_SIZE 3
 #define MAX_RECORD_LINE_SIZE 59
 #define HEADER_RECORD 'H'
 #define TEXT_RECORD 'T'
@@ -60,8 +59,8 @@ char *formatter(char *str, int max_length) {
 *              [ Writer ]               *
 ****************************************/
 void writer(FILE *result, char *str) {
-	fprintf(result, "%s^", formatter(str, 6));
-	printf("%s^", formatter(str, 6));
+	fprintf(result, "%s ", formatter(str, 6));
+	printf("%s ", formatter(str, 6));
 }
 
 /****************************************
@@ -84,6 +83,7 @@ void pass_2(ListHeader *plist, FILE *source) {
 	char *startP, *endP;
 	char buffer[128] = {'\0',};
 	char *startingAddr;
+	char *Origin_StartAddr;
 	char *opcode;
 	char *operand;
 	char len[MAX_CHAR_SIZE];
@@ -98,12 +98,13 @@ void pass_2(ListHeader *plist, FILE *source) {
 	linedata = readline(source);
 	if (strstr(linedata->opcode, "START")) {
 		startingAddr = linedata->operand;
+		Origin_StartAddr = startingAddr;
 		linedata = readline(source);
 	}
 	/* Write Header Record */
-	fprintf(result, "%c^", HEADER_RECORD);
+	fprintf(result, "%c ", HEADER_RECORD);
 	
-	printf("%c^", HEADER_RECORD);
+	printf("%c ", HEADER_RECORD);
 	for (i = 0; i < 6; i++) {
 		fprintf(result, "%c", symtab->name[i]);
 		printf("%c", symtab->name[i]);
@@ -112,7 +113,7 @@ void pass_2(ListHeader *plist, FILE *source) {
 		fprintf(result, " ");
 		printf(" ");
 	}
-	printf("^");
+	printf(" ");
 	writer(result, startingAddr);
 	writer(result, symtab->length);
 
@@ -126,10 +127,11 @@ void pass_2(ListHeader *plist, FILE *source) {
 			
 			/* Re-Write text record */
 			if (strstr(linedata->opcode, "END") || count > MAX_RECORD_LINE_SIZE || (isEnd == 1 && getValue(linedata->opcode))) {
-				fprintf(result, "\n%c^", TEXT_RECORD);
-				printf("\n%c^", TEXT_RECORD);
+
+				fprintf(result, "\n%c ", TEXT_RECORD);
+				printf("\n%c ", TEXT_RECORD);
 				writer(result, startingAddr);
-				sprintf(len, "%X^", count/2);
+				sprintf(len, "%X ", count/2);
 				fprintf(result, "%s", len);
 				printf("%s", len);
 				fprintf(result, "%s", buffer);
@@ -157,6 +159,11 @@ void pass_2(ListHeader *plist, FILE *source) {
 
 					/* symtab °Ë»ç */
 					if (operand = searchNode(symtab, linedata->operand)) {
+						
+						if (linedata->isIndex) {
+							sprintf(operand, "%X", _strtoi64(operand, NULL, 16) + (0x4000));
+						}
+						
 						strcat(buffer, operand);
 					}
 					else {
@@ -166,6 +173,8 @@ void pass_2(ListHeader *plist, FILE *source) {
 						strcat(buffer, "0000");
 					}
 				}
+				
+
 				count += 6;
 				//startingAddr += 3;
 			}
@@ -210,12 +219,12 @@ void pass_2(ListHeader *plist, FILE *source) {
 				//count += strlen(linedata->operand);
 				isEnd = 1;
 			}
-			else if (strstr(linedata->opcode, "RESW") || strstr(linedata->opcode, "RESB")) {
+			
+			if (strstr(linedata->opcode, "RESW") || strstr(linedata->opcode, "RESB")) {
 				isEnd = 1;
 			}
-			strcat(buffer, "^");
+			strcat(buffer, " ");
 			index++;
-			
 		}
 	if(!feof(sourceFile))
 		/* Read line */
@@ -223,9 +232,9 @@ void pass_2(ListHeader *plist, FILE *source) {
 	}
 
 	/* Write End Record */
-	fprintf(result, "\n%c^", END_RECORD);
-	printf("\n%c^", END_RECORD);
-	writer(result, startingAddr);
+	fprintf(result, "\n%c ", END_RECORD);
+	printf("\n%c ", END_RECORD);
+	writer(result, Origin_StartAddr);
 
 	printf("\n\n");
 

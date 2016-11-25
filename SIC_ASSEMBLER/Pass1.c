@@ -35,6 +35,7 @@ typedef struct {
 *             [ Read Line ]             *
 ****************************************/
 Data *readline(FILE *source) {
+
 	char line[100];
 	fgets(line, 100, source);
 	line[strlen(line) - 1] = '\0';

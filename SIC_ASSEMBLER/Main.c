@@ -46,7 +46,6 @@ char *searchIndex(ListHeader *plist, char index);
 int modify_Node_Value(ListHeader *plist, char *nodename, char *mod_value);
 void printNode(ListHeader *plist);
 FILE *openFile(char *filename);
-
 /* Tokenized function */
 Data *parse(char *str);
 int isCharacter(char input);
@@ -70,10 +69,8 @@ Node OPTAB[MAX_OPTAB_SIZE];
 ****************************************/
 int main() {
 	/* Define */
-	Data *line_data;
 	FILE *sourceFile;
-	FILE *sourceFile2;
-	int i = 0;
+
 	/* Initialize */
 	init_OPTAB(&OPTAB);
 	init_SYMTAB(&SYMTAB);
