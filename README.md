@@ -18,15 +18,15 @@ START, END, RESW, REWB, BYTE, WORD
 
 
 ## Flow Chart
-![ flow1 ]({{ site.url }}/assets/flow1.bmp)
-![ flow2 ]({{ site.url }}/assets/flow2.bmp)
-![ flow3 ]({{ site.url }}/assets/flow3.bmp)
+![ flow1 ](/assets/flow1.bmp)
+![ flow2 ](/assets/flow2.bmp)
+![ flow3 ](/assets/flow3.bmp)
 
 
 ## Data Flow Diagram
 
 ###Modularized Assembler Architecture  
-![ Data_Flow_Diagram ]({{ site.url }}/assets/Data_Flow_Diagram.bmp)
+![ Data_Flow_Diagram ](/assets/Data_Flow_Diagram.bmp)
 
 
 ## Source Feature
@@ -118,25 +118,25 @@ START, END, RESW, REWB, BYTE, WORD
 
 
 # Usage And Assembler Implementation Process
-[ source.txt ]({{ site.url }}/assets/source.txt)  
+[ source.txt ](/assets/source.txt)  
 
 ```
 COPY	START	1000
-FIRST	STL		RETADR
+FIRST	STL	RETADR
 CLOOP	JSUB	RDREC
-		LDA		LENGTH
-		COMP	ZERO
-		JEQ		ENDFIL
-		JSUB	WRREC
-		J		CLOOP
-ENDFIL	LDA		EOF
-		STA		BUFFER
-		LDA		THREE
-		STA		LENGTH
-		JSUB	WRREC
-		LDL		RETADR
-		RSUB		
-EOF		BYTE	C'EOF'
+	LDA	LENGTH
+	COMP	ZERO
+	JEQ	ENDFIL
+	JSUB	WRREC
+	J	CLOOP
+ENDFIL	LDA	EOF
+	STA	BUFFER
+	LDA	THREE
+	STA	LENGTH
+	JSUB	WRREC
+	LDL	RETADR
+	RSUB		
+EOF	BYTE	C'EOF'
 THREE	WORD	3
 ZERO	WORD	0
 RETADR	RESW	1
@@ -145,53 +145,53 @@ BUFFER	RESB	4096
 .
 .	SUBROUTINE TO READ RECORD INTO BUFFER
 .
-RDREC	LDX		ZERO
-		LDA		ZERO
-RLOOP	TD		INPUT
-		JEQ		RLOOP
-		RD		INPUT
-		COMP	ZERO
-		JEQ		EXIT
-		STCH	BUFFER,X
-		TIX		MAXLEN
-		JLT		RLOOP
-EXIT	STX		LENGTH
-		RSUB		
+RDREC	LDX	ZERO
+	LDA	ZERO
+RLOOP	TD	INPUT
+	JEQ	RLOOP
+	RD	INPUT
+	COMP	ZERO
+	JEQ	EXIT
+	STCH	BUFFER,X
+	TIX	MAXLEN
+	JLT	RLOOP
+EXIT	STX	LENGTH
+	RSUB		
 INPUT	BYTE	X'F1'
 MAXLEN	WORD	4096
 .
 .	SUBROUTINE TO READ RECORD INTO BUFFER
 .
-WRREC	LDX		ZERO
-WLOOP	TD		OUTPUT
-		JEQ		WLOOP
-		LDCH	BUFFER,X
-		WD		OUTPUT
-		TIX		LENGTH
-		JLT		WLOOP
-		RSUB		
+WRREC	LDX	ZERO
+WLOOP	TD	OUTPUT
+	JEQ	WLOOP
+	LDCH	BUFFER,X
+	WD	OUTPUT
+	TIX	LENGTH
+	JLT	WLOOP
+	RSUB		
 OUTPUT	BYTE	X'05'
-		END		FIRST
+	END	FIRST
 ```
 
 ### Test in Linux
 **arguments**
-![ args ]({{ site.url }}/assets/args.bmp)  
+![ args ](/assets/args.bmp)  
 
 **usage**
-![ usage ]({{ site.url }}/assets/usage.bmp)  
+![ usage ](/assets/usage.bmp)  
 
 **makefile**
-![ makefile ]({{ site.url }}/assets/makefile.bmp)  
+![ makefile ](/assets/makefile.bmp)  
 
 **cat**
-![ cat ]({{ site.url }}/assets/cat.bmp)  
+![ cat ](/assets/cat.bmp)  
 
 **script**
-![ script ]({{ site.url }}/assets/script.bmp)  
+![ script ](/assets/script.bmp)  
 
 ## Result
-![ result ]({{ site.url }}/assets/result.bmp)  
+![ result ](/assets/result.bmp)  
 
 ## Cautions
 1. Write the order of (first)LABEL, (second)OPCODE, (third)OPERAND
