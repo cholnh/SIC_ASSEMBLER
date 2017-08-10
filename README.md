@@ -2,18 +2,18 @@
 ## Design process
 
 1. Set Architecture  
-Used Two-Pass
+**Used Two-Pass**
 2. Data-Structure of Micro-Instruction Set Table  
-Used Array list
+**Used Array list**
 3. The Algorithm of searching Operator Table  
-Used Sequential Search
+**Used Sequential Search**
 4. Notation of Addressing Mode of Assembler  
-Index mode
+**Index mode**
 5. Directive Instructions  
-START, END, RESW, REWB, BYTE, WORD
+**START, END, RESW, REWB, BYTE, WORD**
 6. Structure of Object Codes  
-- Cut off in terms of sub routine
-- Maximum line : 60  
+**Cut off in terms of sub routine**  
+**Maximum line : 60**
 
 
 ## Flow Chart
