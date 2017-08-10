@@ -1,4 +1,5 @@
 # Index
+- [Intro](#intro)
 - [Design process](#design-process)
 - [Flow Chart](#flow-Chart)
 - [Data Flow Diagram](#data-flow-diagram)
@@ -6,8 +7,13 @@
 - [Usage And Assembler Implementation Process](#usage-and-assembler-implementation-process)
 - [Result](#result)
 - [Cautions](#cautions)  
-    
-  
+
+# Intro
+연상 연산코드(mnemonic operation code)와 기호 피연산자(symbolic operand)를 매핑되는 동등한 기계어로 전환하는 Simple **SIC ASSEMBLER**  
+
+해당 문서는 **MIT License**가 적용됩니다.
+Copyright (c) 2017 Choi Nak Hyung
+
 # Design process
 
 1. Set Architecture  
