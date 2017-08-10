@@ -183,19 +183,19 @@ OUTPUT	BYTE	X'05'
 ```
 
 ### Test in Linux
-**arguments**
+**arguments**  
 ![ args ](/assets/args.bmp)  
 
-**usage**
+**usage**  
 ![ usage ](/assets/usage.bmp)  
 
-**makefile**
+**makefile**  
 ![ makefile ](/assets/makefile.bmp)  
 
-**cat**
+**cat**  
 ![ cat ](/assets/cat.bmp)  
 
-**script**
+**script**  
 ![ script ](/assets/script.bmp)  
 
 ## Result
