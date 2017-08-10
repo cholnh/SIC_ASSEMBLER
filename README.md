@@ -1,4 +1,3 @@
-# SIC ASSEMBLER
 
 ## Design process
 
