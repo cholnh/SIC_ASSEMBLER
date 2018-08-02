@@ -10,10 +10,6 @@
 
 # Intro
 연상 연산코드(mnemonic operation code)와 기호 피연산자(symbolic operand)를 매핑되는 동등한 기계어로 전환하는 Simple **SIC ASSEMBLER**  
-  
-해당 문서는 **MIT License**가 적용됩니다.  
-Copyright (c) 2017 Choi Nak Hyung  
-See the file license.txt for copying permission.
 
 # Design process
 
